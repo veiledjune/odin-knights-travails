@@ -17,7 +17,6 @@ function knightMoves(start, end) {
     const nextMoves = getMoves(current, path);
     nextMoves.forEach((move) => queue.push([move, [...path, move]]));
   }
-  console.log(queue);
 }
 
 function getMoves(move, path) {
